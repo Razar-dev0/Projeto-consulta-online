@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Online</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Agendamento</a></li>
+                <li><a href="#">Consultas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <link rel="stylesheet" href="./src/images/images.jpg">
+        <section id="agendamento">
+            <h2>Agendamento de Consultas</h2>
+            <form id="agendamento-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data"><br><br>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora"><br><br>
+                <button id="agendar-btn">Agendar</button>
+            </form>
+            <ul id="lista-agendamentos"></ul>
+        </section>
+        <section id="video-conferencia">
+            <h2>Vídeo Conferência</h2>
+            <div id="video-container"></div>
+        </section>        
+    </main>
+    <footer>
+        <p>&copy; 2024 Consulta Online</p>
+    </footer>    
+    <script src="./src/js/index.js"></script>
+</body> 
+</html>
